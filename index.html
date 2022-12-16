@@ -7,95 +7,108 @@
     <title>Formpage</title>
   </head>
   <body>
-    <div
-      class="min-h-screen py-24"
-      style="background-image: linear-gradient(115deg, #9ca783, #4691aa)"
-    >
-      <div class="container mx-auto">
-        <div
-          class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden"
-        >
+    <form id="form">
+      <div
+        class="min-h-screen py-24"
+        style="background-image: linear-gradient(115deg, #9ca783, #4691aa)"
+      >
+        <div class="container mx-auto">
           <div
-            class="w-full lg:w-1/2 bg-cover flex flex-col items-center justify-center bg-no-repeat bg bg-center"
-            style="
-              background-image: url('./image/554904_196901457144606_1036654860_n.jpg');
-            "
+            class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden"
           >
-            <p class="text-white text-xl">
-              Why do they call it rush hour when nothing moves?
-            </p>
-          </div>
-          <div class="w-full lg:w-1/2 py-16 px-12">
-            <h2 class="text-3xl mb-4">Register</h2>
-            <p class="mb-4">
-              Create your account, it's free and only take a minute.
-            </p>
-            <form action="#">
-              <div class="grid grid-cols-2 gap-5">
-                <input
-                  type="text"
-                  placeholder="First Name"
-                  class="border rounded-lg border-gray-400 py-1 px-2"
-                  required
-                />
-                <input
-                  type="text"
-                  placeholder="Last Name"
-                  class="border rounded-lg border-gray-400 py-1 px-2"
-                  required
-                />
-              </div>
-              <div class="mt-5">
-                <input
-                  type="text"
-                  placeholder="Email"
-                  class="border rounded-lg border-gray-400 py-1 px-2 w-full"
-                  required
-                />
-              </div>
-              <div class="mt-5">
-                <input
-                  type="password"
-                  placeholder="Password"
-                  class="border border-gray-400 py-1 px-2 w-full rounded-lg"
-                  required
-                  minlength="5"
-                  maxlength="17"
-                />
-              </div>
-              <div class="mt-5">
-                <input
-                  type="password"
-                  placeholder="Confirm Password"
-                  class="border border-gray-400 py-1 px-2 w-full rounded-lg"
-                  required
-                />
-              </div>
-              <div class="mt-5">
-                <input type="checkbox" class="border border-gray-400" required />
-                <span>
-                  I accept the
-                  <a href="#" class="text-purple-500 font-semibold"
-                    >Terms of Use</a
+            <div
+              class="w-full lg:w-1/2 bg-cover flex flex-col items-center justify-center bg-no-repeat bg bg-center"
+              style="
+                background-image: url('./image/554904_196901457144606_1036654860_n.jpg');
+              "
+            >
+              <p class="text-white text-xl pl-4">
+                Why do they call it rush hour when nothing moves?
+              </p>
+            </div>
+            <div class="w-full lg:w-1/2 py-16 px-12">
+              <h2 class="text-3xl mb-4">Register</h2>
+              <p class="mb-4">
+                Create your account, it's free and only take a minute.
+              </p>
+              <fieldset>
+                <div class="grid grid-cols-2 gap-5">
+                  <input
+                    type="text"
+                    name="Firstname"
+                    placeholder="First Name"
+                    class="border rounded-lg border-gray-400 py-1 px-2"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="Lastname"
+                    placeholder="Last Name"
+                    class="border rounded-lg border-gray-400 py-1 px-2"
+                    required
+                  />
+                </div>
+                <div class="mt-5">
+                  <input
+                    type="text"
+                    name="Email"
+                    placeholder="Email"
+                    class="border rounded-lg border-gray-400 py-1 px-2 w-full"
+                    required
+                  />
+                </div>
+                <div class="mt-5">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="border border-gray-400 py-1 px-2 w-full rounded-lg"
+                    required
+                    name="password"
+                    minlength="5"
+                    maxlength="17"
+                  />
+                </div>
+                <div class="mt-5">
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    placeholder="Confirm Password"
+                    class="border border-gray-400 py-1 px-2 w-full rounded-lg"
+                    required
+                  />
+                </div>
+                <div class="mt-5">
+                  <input
+                    type="checkbox"
+                    name=" checkbox"
+                    class="border border-gray-400"
+                    required
+                  />
+                  <span>
+                    I accept the
+                    <a href="#" class="text-purple-500 font-semibold"
+                      >Terms of Use</a
+                    >
+                    &
+                    <a href="#" class="text-purple-500 font-semibold"
+                      >Privacy Policy</a
+                    >
+                  </span>
+                </div>
+                <div class="mt-5">
+                  <button
+                    type="submit"
+                    class="w-full bg-purple-500 py-3 text-cente text-white border rounded-lg"
                   >
-                  &
-                  <a href="#" class="text-purple-500 font-semibold"
-                    >Privacy Policy</a
-                  >
-                </span>
-              </div>
-              <div class="mt-5">
-                <button
-                  class="w-full bg-purple-500 py-3 text-cente text-white border rounded-lg"
-                >
-                  Register Now
-                </button>
-              </div>
-            </form>
+                    Register Now
+                  </button>
+                </div>
+              </fieldset>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
