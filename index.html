@@ -36,11 +36,13 @@
                   type="text"
                   placeholder="First Name"
                   class="border rounded-lg border-gray-400 py-1 px-2"
+                  required
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
                   class="border rounded-lg border-gray-400 py-1 px-2"
+                  required
                 />
               </div>
               <div class="mt-5">
@@ -48,6 +50,7 @@
                   type="text"
                   placeholder="Email"
                   class="border rounded-lg border-gray-400 py-1 px-2 w-full"
+                  required
                 />
               </div>
               <div class="mt-5">
@@ -55,6 +58,9 @@
                   type="password"
                   placeholder="Password"
                   class="border border-gray-400 py-1 px-2 w-full rounded-lg"
+                  required
+                  minlength="5"
+                  maxlength="17"
                 />
               </div>
               <div class="mt-5">
@@ -62,10 +68,11 @@
                   type="password"
                   placeholder="Confirm Password"
                   class="border border-gray-400 py-1 px-2 w-full rounded-lg"
+                  required
                 />
               </div>
               <div class="mt-5">
-                <input type="checkbox" class="border border-gray-400" />
+                <input type="checkbox" class="border border-gray-400" required />
                 <span>
                   I accept the
                   <a href="#" class="text-purple-500 font-semibold"
