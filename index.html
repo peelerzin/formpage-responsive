@@ -35,14 +35,14 @@
                 <div class="grid grid-cols-2 gap-5">
                   <input
                     type="text"
-                    name="Firstname"
+                    name="firstname"
                     placeholder="First Name"
                     class="border rounded-lg border-gray-400 py-1 px-2"
                     required
                   />
                   <input
                     type="text"
-                    name="Lastname"
+                    name="lastname"
                     placeholder="Last Name"
                     class="border rounded-lg border-gray-400 py-1 px-2"
                     required
@@ -51,7 +51,7 @@
                 <div class="mt-5">
                   <input
                     type="text"
-                    name="Email"
+                    name="email"
                     placeholder="Email"
                     class="border rounded-lg border-gray-400 py-1 px-2 w-full"
                     required
@@ -66,7 +66,12 @@
                     name="password"
                     minlength="5"
                     maxlength="17"
+                    id="password"
                   />
+                  <div class="flex gap-2 mt-2" id="password-strengh">
+                    <div id="p-weak" class="bg-slate-200 h-1 grow rounded-md"></div>
+                    <div id="p-medium" class="bg-slate-200 h-1 grow rounded-md"></div>
+                    <div id="p-strong" class="bg-slate-200 h-1 grow rounded-md"></div>
                 </div>
                 <div class="mt-5">
                   <input
@@ -109,6 +114,6 @@
         </div>
       </div>
     </form>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.ts"></script>
   </body>
 </html>
